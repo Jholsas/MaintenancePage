@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MaintenancePage</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MaintenancePage.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="header ">
+            <div class="col logo my-auto">
+                <a href=" https://www.peo.on.ca/ ">
+                    <img src="https://www.peo.on.ca/themes/peo_bootstrap/dist/images/peo-logo.png" alt="Professionals Engineer Ontario" />
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer border-top box-shadow">
+        <div class="container-fluid">
+            <div class="row footer-top-row">
+                <div class="col-sm-12 col-md-6 footer-logo my-auto">
+                    <a href=" https://www.peo.on.ca/ ">
+                        <img src="https://www.peo.on.ca/themes/peo_bootstrap/dist/images/peo-logo.png" alt="Professionals Engineer Ontario" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 social-media my-auto">
+                    <h3 class="no-small" style="margin-right: 20px;">Follow us</h3>
+                    <a href="https://twitter.com/PEO_HQ" target="_blank">
+                        <button id="social-twitter" aria-label="Twitter Link"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></button>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCWJE-nROfT_LxYFSTaSmSXg" target="_blank">
+                        <button id="social-youtube" aria-label="Youtube Link"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></button>
+                    </a>
+                    <a href="https://www.facebook.com/ProfessionalEngineersOntario/" target="_blank">
+                        <button id="social-facebook" aria-label="Facebook Link"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></button>
+                    </a>
+                    <a href="https://www.linkedin.com/company/peo---professional-engineers-ontario/" target="_blank">
+                        <button id="social-linkedin" aria-label="Linkedin Link"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer-bottom-row">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 my-auto footer-copyright">
+                    <p>© 2023 Professional Engineers Ontario</p>
+                </div>
+                <div class="col-sm-12 col-md-6 my-auto footer-bottom-links">
+                    <a href="https://www.peo.on.ca/professional-engineers-ontario-website-terms-use-and-legal-restrictions">Website Policies &amp; Terms of Use</a>
+                    <a href="https://www.peo.on.ca/home/accessibility-peo">Accessibility at PEO</a>
+                    <a href="https://www.peo.on.ca/sitemap">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
